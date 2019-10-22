@@ -1,5 +1,5 @@
 :: *****************************************************************************
-:: UpdateTacomaSpace.bat  1/28/2019 
+:: UpdateTacomaSpace.bat  10/22/2019 
 :: Summary: Update TacomaSpace.com data
 ::
 :: Description: The process to update CSV file used by TacomaSpace.com 
@@ -20,7 +20,7 @@
 Echo Downloading latest CBA data... >> %LogDir%%theDate%.log
 
 ::Send standard output (1) & errors (2) to log file
- C:\Python27\ArcGISx6410.4\python.exe \\geobase-win\ced\GADS\R2017\R192\TacomaSpaceUpdate\CBA_Download.py 1>>%LogDir%%theDate%.log 2>&1
+ C:\Python27\ArcGISx6410.7\python.exe \\geobase-win\ced\GADS\R2017\R192\TacomaSpaceUpdate\CBA_Download.py 1>>%LogDir%%theDate%.log 2>&1
 
 :: Record ending time
  time /T >> %LogDir%%theDate%.log
